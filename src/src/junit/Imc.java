@@ -28,10 +28,10 @@ public class Imc {
 
 	public String calcularIMC() {
 		
-		if(sexo.equals("Mulher")) {//1
+		if(sexo.equals("Mulher")) {
 			double imcMulher = peso / (altura * altura);			
 			
-			if (imcMulher < 19.1) {//2
+			if (imcMulher < 19.1) {
 				return "Abaixo do peso";
 			} else if (imcMulher >= 19.1 && imcMulher < 25.8) {
 				return "Peso normal";
