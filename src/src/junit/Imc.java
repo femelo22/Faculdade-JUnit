@@ -28,40 +28,32 @@ public class Imc {
 
 	public String calcularIMC() {
 		
+		double imc = peso / (altura * altura);
+		
 		if(sexo.equals("Mulher")) {
-			double imcMulher = peso / (altura * altura);			
-			
-			if (imcMulher < 19.1) {
+			if (imc < 19.1) {
 				return "Abaixo do peso";
-			} else if (imcMulher >= 19.1 && imcMulher < 25.8) {
+			} else if (imc < 25.8) {
 				return "Peso normal";
-			} else if (imcMulher >= 25.8 && imcMulher < 27.3) {
+			} else if (imc < 27.3) {
 				return "Marginalmente acima do peso";
-			} else if (imcMulher >= 27.3 && imcMulher < 32.3) {
+			} else if (imc < 32.3) {
 				return "Acima do peso";
-			} else if (imcMulher >= 32.3) {
+			} else {
 				return "Obesa";
-			} else {
-				return "Dados invalidos";
-			}
-		}else if(sexo.equalsIgnoreCase("Homem")){
-			double imcHomem = peso / (altura * altura);
-
-			if (imcHomem < 20.7) {
+			} 
+		}else{
+			if (imc < 20.7) {
 				return "Abaixo do peso";
-			} else if (imcHomem >= 20.7 && imcHomem < 26.4) {
+			} else if (imc < 26.4) {
 				return "Peso normal";
-			} else if (imcHomem >= 26.4 && imcHomem < 27.8) {
+			} else if (imc < 27.8) {
 				return "Marginalmente acima do peso";
-			} else if (imcHomem >= 27.8 && imcHomem < 31.1) {
+			} else if (imc < 31.1) {
 				return "Acima do peso";
-			} else if (imcHomem >= 31.1) {
+			} else{
 				return "Obeso";
-			} else {
-				return "Dados invalidos";
-			}
-		}else {
-			return "Sexo invalido";
+			} 
 		}
 		
 	}
