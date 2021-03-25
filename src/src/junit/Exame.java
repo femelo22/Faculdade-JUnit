@@ -15,61 +15,61 @@ public class Exame {
 	
 	public String medidaTriglicerides() {
 		if(medida < 150) {
-			return "Nivel desejável";
+			return "Desejavel";
 		}else if(medida < 199) {
-			return "Nivel limitrofe";
+			return "Limitrofe";
 		}else if(medida < 499) {
-			return "Nivel alto";
+			return "Alto";
 		}else {
-			return "Nível muito alto";
+			return "Muito alto";
 		}	
 	}
 	
 	
 	public String medidaColesterolTotal() {
 		if(medida < 200) {
-			return "Nivel desejável";
+			return "Desejavel";
 		}else if(medida < 239) {
-			return "Nivel limitrofe";
+			return "Limitrofe";
 		}else {
-			return "Nivel Elevado";
+			return "Elevado";
 		}
 	}
 	
 	
 	public String medidaColesterolHDL() {
 		if(medida < 40) {
-			return "Nivel baixo";
+			return "Baixo";
 		}else if(medida < 60) {
-			return "Nivel normal";
+			return "Normal";
 		}else {
-			return "Nivel desejável";
+			return "Desejavel";
 		}
 	}
 	
 	
 	public String medidaColesterolLDL() {
 		if(medida < 100) {
-			return "Nivel muito bom";
+			return "Muito bom";
 		}else if(medida < 129) {
-			return "Nivel desejável";
+			return "Desejavel";
 		}else if(medida < 159) {
-			return "Nivel limitrofe";
+			return "Limitrofe";
 		}else if(medida < 189) {
-			return "Nivel alto";
+			return "Alto";
 		}else {
-			return "Nível muito alto";
+			return "Muito alto";
 		}
 	}
 	
 	
 	public String medidaColesterolVLDL() {
 		if(medida < 30) {
-			return "Nivel desejável";
+			return "Desejavel";
 		}else if(medida < 40) {
-			return "Nivel limitrofe";
+			return "Limitrofe";
 		}else {
-			return "Nivel elevado";
+			return "Elevado";
 		}
 	}
 	
@@ -78,7 +78,7 @@ public class Exame {
 		if(medida < 60) {
 			return "Hipoglicemia";
 		}else if(medida < 99) {
-			return "Nivel desejável";
+			return "Desejavel";
 		}else if(medida < 125) {
 			return "Glicemia de jejum inapropriada";
 		}else {
