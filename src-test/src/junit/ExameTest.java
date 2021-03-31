@@ -2,9 +2,9 @@ package src.junit;
 
 import junit.framework.TestCase;
 
-public class ExameTest extends TestCase{
+public class ExameTest extends TestCase {
 	
-	private Exame exame;
+	private Exame exame ;
 	
 	private String DESEJAVEL = "Desejavel";
 	private String LIMITROFE = "Limitrofe";
@@ -22,14 +22,13 @@ public class ExameTest extends TestCase{
 		exame = new Exame();
 	}
 	
-	
 	public void testResultadoTriglicerides_Desejavel() {
 		exame.setMedida(149);
 		assertEquals(DESEJAVEL, exame.medidaTriglicerides());
 	}
 	
 	public void testResultadoTriglicerides_Limitrofe() {
-		exame.setMedida(198);
+		exame.setMedida(199);
 		assertEquals(LIMITROFE, exame.medidaTriglicerides());
 	}
 	
