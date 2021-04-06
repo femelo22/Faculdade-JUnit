@@ -28,7 +28,7 @@ public class ExameTest extends TestCase {
 	}
 	
 	public void testResultadoTriglicerides_Limitrofe() {
-		exame.setMedida(199);
+		exame.setMedida(198);
 		assertEquals(LIMITROFE, exame.medidaTriglicerides());
 	}
 	
