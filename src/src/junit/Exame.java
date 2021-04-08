@@ -17,7 +17,7 @@ public class Exame {
 			return "Desejavel";
 		} else if (medida < 199) {
 			return "Limitrofe";
-		} else if (medida < 499) {
+		} else if (medida < 499) {	
 			return "Alto";
 		} else {
 			return "Muito alto";

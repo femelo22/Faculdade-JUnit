@@ -5,7 +5,7 @@ package src.junit;
 import junit.framework.TestCase;
 import src.junit.Imc;
 
-public class ImcTest extends TestCase{
+public class ImcTest extends TestCase {
 
 	Imc imc;
 	

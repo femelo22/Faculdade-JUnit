@@ -117,7 +117,7 @@ public class ExameTest extends TestCase {
 	
 	
 	
-	public void testColesterolVLDL_Desejavel(){
+	public void testColesterolVLDL_Desejavel() {
 		exame.setMedida(29);
 		assertEquals(DESEJAVEL, exame.medidaColesterolVLDL());
 	}
