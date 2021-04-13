@@ -12,14 +12,14 @@ public class Aposta {
 	
 	
 
-	public static void validarAposta(List<Integer> numerosApostados) {
+	public void validarAposta(List<Integer> numerosApostados) {
 
 		if (numerosApostados.size() < APOSTA_MINIMA) {
 			throw new IllegalArgumentException("A aposta abaixo da mínima");
 		}
 
 		if (numerosApostados.size() > APOSTA_MAXIMA) {
-			throw new IllegalArgumentException("A aposta cima da máxima");
+			throw new IllegalArgumentException("A aposta acima da máxima");
 		}
 
 		List<Integer> numerosValidos = new ArrayList<>();
@@ -38,15 +38,5 @@ public class Aposta {
 		}
 	}
 	
-	
-	protected static int calcularAcertos(List<Integer> apostados, List<Integer> sorteados) {
-		int acertos = 0;
-		for (Integer apostado : apostados) {
-			if (sorteados.contains(apostado)) {
-				acertos++;
-			}
-		}
-		return acertos;
-	}
 
 }

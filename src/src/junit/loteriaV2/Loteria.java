@@ -14,9 +14,11 @@ public class Loteria {
 
 	public double calcularPremio(List<Integer> apostados, List<Integer> sorteados, double premioTotal) {
 		
-		Aposta.validarAposta(apostados);
+		Aposta aposta = new Aposta();
 		
-		int acertos = Aposta.calcularAcertos(apostados, sorteados);
+		aposta.validarAposta(apostados);
+		
+		int acertos = this.calcularAcertos(apostados, sorteados);
 
 		if (acertos == NUM_ACERTOS_SENA) {
 			return premioTotal * PERC_PREMIO_SENA;
@@ -27,6 +29,17 @@ public class Loteria {
 		} else {
 			return 0.0;
 		}
+	}
+	
+	
+	protected int calcularAcertos(List<Integer> apostados, List<Integer> sorteados) {
+		int acertos = 0;
+		for (Integer apostado : apostados) {
+			if (sorteados.contains(apostado)) {
+				acertos++;
+			}
+		}
+		return acertos;
 	}
 
 }
