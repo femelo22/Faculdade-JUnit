@@ -14,9 +14,9 @@ public class Loteria {
 
 	public double calcularPremio(List<Integer> apostados, List<Integer> sorteados, double premioTotal) {
 		
-		Aposta aposta = new Aposta();
+		//Aposta aposta = new Aposta();
 		
-		aposta.validarAposta(apostados);
+		//aposta.validarAposta(apostados);
 		
 		int acertos = this.calcularAcertos(apostados, sorteados);
 

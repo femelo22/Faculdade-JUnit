@@ -3,27 +3,37 @@ package src.junit.loteriaV2;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.jupiter.api.Test;
+
 import junit.framework.TestCase;
+import util.RandomNumbers;
 
 public class LoteriaTest extends TestCase {
-	
-private Loteria loteria;
-	
+
+	private Loteria loteria;
+
 	public void setUp() {
 		loteria = new Loteria();
 	}
-	
-	
-	public void testLoteria_Sena() {
-		//List<Integer> apostados,
-		Arrays.asList();
-		
-		int[] sorteados = {1,2,3,4,5,6,7,8,9,10,11,12};
-		
 
-		List<Integer> apostados;
-		
-		//loteria.calcularPremio(apostados, sorteados, 1000);
+	@Test
+	public void testLoteria_Sena() {
+
+		List<Integer> apostados = Arrays.asList(1, 2, 3, 4, 5, 6);
+
+		List<Integer> sorteados = Arrays.asList(1, 2, 3, 9, 10, 11);
+
+		assertEquals(0.0, loteria.calcularPremio(apostados, sorteados, 100));
+	}
+
+	@Test
+	public void testAposta_AcimaMaximaIgual() {
+
+		List<Integer> apostados = Arrays.asList(1, 2, 3, 4, 5, 6);
+
+		List<Integer> sorteados = Arrays.asList(1, 2, 3, 9, 10, 11);
+
+		assertEquals(0.0, loteria.calcularPremio(apostados, sorteados, 100));
 	}
 
 }

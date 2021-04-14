@@ -1,6 +1,7 @@
-package src.junit.loteriaV2;
+package src.junit.loteriaV3;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
