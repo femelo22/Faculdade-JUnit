@@ -10,7 +10,7 @@ public class Sorteio implements ISorteio {
     private static final int MAIOR_NUMERO_SORTEIO = 59; // subtrair 1 ao limite
 
     private final List<Integer> numeros;
-
+   
     public Sorteio(int qtdeNumeros) {
         this.numeros = sortear (qtdeNumeros);
     }

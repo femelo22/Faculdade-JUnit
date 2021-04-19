@@ -10,10 +10,10 @@ import util.RandomNumbers;
 
 public class LoteriaTest extends TestCase {
 
-	private Loteria loteria;
+	private LoteriaV2 loteria;
 
 	public void setUp() {
-		loteria = new Loteria();
+		loteria = new LoteriaV2();
 	}
 
 	@Test

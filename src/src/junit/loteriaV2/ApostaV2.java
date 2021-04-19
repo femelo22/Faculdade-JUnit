@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Aposta {
+public class ApostaV2 {
 	
     private static final int APOSTA_MINIMA = 6;
     private static final int APOSTA_MAXIMA = 15;
@@ -13,7 +13,7 @@ public class Aposta {
     
     private final List<Integer> numeros;
 
-    public Aposta(List<Integer> numeros) {
+    public ApostaV2(List<Integer> numeros) {
         this.numeros = Collections.unmodifiableList(numeros);// cópia defensiva
         validarAposta(numeros);
     }

@@ -30,13 +30,13 @@ public class CalculadoraDeSono {
 			if(horasDormidas >= 9 && horasDormidas <= 11) {
 				return "Sono ideal para crianças de 6 aos 13 anos";
 			}else {
-				return "Sono desregulado de 6 aos 13 anos";
+				return "Sono desregulado para crianças de 6 aos 13 anos";
 			}
 		}else if(idade < 17) {
 			if(horasDormidas >= 8 && horasDormidas <= 9) {
 				return "Sono ideal para adolescentes de 14 a 17 anos";
 			}else {
-				return "Sono desregulado adolescentes de 14 a 17 anos";
+				return "Sono desregulado para adolescentes de 14 a 17 anos";
 			}
 		}else if(idade < 64) {
 			if(horasDormidas >= 7 && horasDormidas <= 9) {
@@ -45,7 +45,7 @@ public class CalculadoraDeSono {
 				return "Sono desregulado para adultos de 18 a 64 anos";
 			}
 		}else {
-			return "idade inválida";
+			return "Idade inválida";
 		}
 		
 	}

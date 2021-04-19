@@ -2,7 +2,7 @@ package src.junit.loteriaV2;
 
 import java.util.List;
 
-public class Loteria {
+public class LoteriaV2 {
 	
 	public static final int NUM_ACERTOS_SENA = 6;
 	public static final int NUM_ACERTOS_QUINA = 5;

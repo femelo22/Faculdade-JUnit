@@ -2,9 +2,6 @@ package src.junit.loteriaV3;
 
 import java.util.List;
 
-import src.junit.loteriaV2.Aposta;
-import src.junit.loteriaV2.ISorteio;
-
 public class Loteria {
 
     public static final int NUM_ACERTOS_SENA = 6;
@@ -14,7 +11,8 @@ public class Loteria {
     public static final double PERC_PREMIO_QUINA = 0.2;
     public static final double PERC_PREMIO_QUADRA = 0.05;
 
-    public double calcularPremio(Aposta aposta, ISorteio sorteio, double premioTotal) {
+    public double calcularPremio(Aposta aposta, Sorteio sorteio, double premioTotal) {
+    	
         if (aposta == null) {
             throw new IllegalArgumentException("Aposta inválida");
         }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Sorteio {
+public class SorteioV2 {
 	
 	private static final int MAIOR_NUMERO_SORTEIO = 59; 
 	private static final int QTDE_NUMEROS_SORTEIO = 6;

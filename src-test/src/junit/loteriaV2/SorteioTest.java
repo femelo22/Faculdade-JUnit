@@ -4,10 +4,10 @@ import junit.framework.TestCase;
 
 public class SorteioTest extends TestCase {
 	
-	private Sorteio sorteio;
+	private SorteioV2 sorteio;
 	
 	public void setUp() {
-		sorteio = new Sorteio();
+		sorteio = new SorteioV2();
 	}
 	
 	public void testSortearNumeros_QtdMaior() {
